@@ -8,7 +8,7 @@ myapp.config['UPLOAD_FOLDER'] = PEOPLE_FOLDER
 @myapp.route("/")
 def home():
     full_filename = os.path.join(myapp.config['UPLOAD_FOLDER'], '19250.jpg')
-    scroll_image = os.path.join(myapp.config['UPLOAD_FOLDER'], '0R4A0096.jpg')
+    scroll_image = os.path.join(myapp.config['UPLOAD_FOLDER'], '0R4A0096.png')
     return render_template('index.html',user_image = full_filename,scroll_image=scroll_image)
 
 

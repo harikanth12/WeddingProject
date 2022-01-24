@@ -5,6 +5,8 @@ myapp = Flask(__name__)
 PEOPLE_FOLDER = os.path.join('static', 'images')
 myapp.config['UPLOAD_FOLDER'] = PEOPLE_FOLDER
 
+
+
 @myapp.route("/")
 def home():
     full_filename = os.path.join(myapp.config['UPLOAD_FOLDER'], '19250.jpg')

@@ -3,6 +3,38 @@
 <head>
     <title>My Wedding</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <script type="text/javascript">
+  var end = new Date('02/16/2022 08:45 PM');
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+        var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
+
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = 'Got Married!';
+
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        document.getElementById('countdown').innerHTML = days + '<span id="days">days </span>';
+        document.getElementById('countdown').innerHTML += hours + 'hrs ';
+        document.getElementById('countdown').innerHTML += minutes + 'mins ';
+        document.getElementById('countdown').innerHTML += seconds + 'secs';
+    }
+
+    timer = setInterval(showRemaining, 1000);
+</script>
 <style>
 h1 {
   color: blue;
@@ -33,6 +65,19 @@ overflow:auto
     font-size:25px;
     text-align: center;
 }
+#countdown {
+    text-align: center;
+}
+#days {
+    color:red;
+}
+#savethedate {
+    text-align: center;
+}
+#caption {
+    text-align: center;
+}
+
 </style>
 </head>
 <body>
@@ -50,19 +95,23 @@ overflow:auto
     </div>
 </div>
 <div class="clearfix"></div>
-
-<!--<div>-->
-<!--    <div class="img_scroll">-->
-<!--        <img src="{{ scroll_image}}" alt="scroll_image">-->
-<!--    </div>-->
-<!--</div>-->
 <div id="outer" style="width:100%;overflow-x:hidden;">
         <div id="inner" style="display: table;margin:auto">
             <img src="{{ scroll_image}}" alt="image" width="1000px">
         </div>
     </div>
 
+<div id="caption">
+    <p>Hari & Sruthi</p>
+    <p> Are Getting Married</p>
+</div>
 
+<div id="countdown">
+</div>
+
+<div id="savethedate">
+    <p> SAVE THE DATE </p>
+</div>
 
 
 </body>

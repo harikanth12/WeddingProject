@@ -13,7 +13,8 @@ def home():
     scroll_image = os.path.join(myapp.config['UPLOAD_FOLDER'], '0R4A0096.png')
     bottom_left_img = os.path.join(myapp.config['UPLOAD_FOLDER'], '0R4A0076.png')
     bottom_right_img = os.path.join(myapp.config['UPLOAD_FOLDER'], '0R4A0106.png')
-    return render_template('index.html',user_image = full_filename,scroll_image=scroll_image,bottom_left_img=bottom_left_img,bottom_right_img=bottom_right_img)
+    return render_template('index.html',user_image = full_filename,scroll_image=scroll_image,bottom_left_img=bottom_left_img,
+                           bottom_right_img=bottom_right_img)
 
 
 if __name__ == "__main__":

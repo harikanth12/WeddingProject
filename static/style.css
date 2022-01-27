@@ -1,0 +1,48 @@
+.god_images img {
+    max-width:100%;
+    width:32%;
+}
+.nav-title {
+    text-align: center;
+    margin: 10px 0;
+}
+#nav-small-text {
+    font-size:10px;
+}
+#nav-big-text {
+    font-size:30px;
+    color: #a637ca;
+    font-family: 'Allura', cursive;
+    text-shadow: 1px 1px 16px rgb(10 255 255 / 20%)
+    }
+#god-right-img {
+    text-align: right;
+}
+.bannerimg img{
+    max-width:100%;
+}
+.countdownbox {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    margin:2%;
+    padding:4%
+}
+.countdowninner {
+    font-family: 'Comforter', cursive;
+}
+.col-centered {
+    float: none;
+    margin: 2px auto;
+    font-family: 'Comforter', cursive;
+    font-size:36px;
+    text-align: center;
+}
+.countdowntitle {
+    margin-top:2%;
+}
+.col-date {
+float: none;
+    margin: 2px auto;
+    font-family: 'Comforter', cursive;
+    text-align: center;
+}

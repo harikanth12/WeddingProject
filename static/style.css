@@ -19,21 +19,26 @@
     text-align: right;
 }
 .bannerimg img{
-    max-width:100%;
+    height: 500px;
+    width: 1146px;
 }
 .countdownbox {
     border-radius: 25px;
     border: 2px solid #73AD21;
     margin:2%;
-    padding:4%
+    padding:4%;
+    background-color:#e29bc5;
+}
+#countdown span {
+font-size:14px;
 }
 .countdowninner {
-    font-family: 'Comforter', cursive;
+    font-family: 'Open Sans', sans-serif;
 }
 .col-centered {
     float: none;
     margin: 2px auto;
-    font-family: 'Comforter', cursive;
+    font-family: 'Yellowtail', cursive;
     font-size:36px;
     text-align: center;
 }
@@ -43,6 +48,38 @@
 .col-date {
 float: none;
     margin: 2px auto;
-    font-family: 'Comforter', cursive;
+    font-family: 'Yellowtail', cursive;
     text-align: center;
+}
+.bottom_right_img img {
+    max-width:100%;
+    height:200px;
+    width:200px;
+}
+.bottom_left_img img {
+    max-width:100%;
+    height:200px;
+    width:200px;
+
+}
+.bottom-txt {
+    text-align: center;
+    margin: 1% au;
+    margin-top: 2%;
+    font-family: 'Yellowtail', cursive;
+    font-weight: 400;
+    font-size: 13px;
+}
+.bottom_right_img {
+text-align: right;
+}
+
+.bottom_left_img {
+text-align: center;
+}
+#hidden {
+    visibility:hidden;
+    }
+#play {
+    margin-top:30px;
 }

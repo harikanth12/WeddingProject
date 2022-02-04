@@ -21,10 +21,60 @@
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
 
-        document.getElementById('countdown').innerHTML = '<div class="countdownbox col-xs-2"><span class="countdowninner">'+days+'<br>days</span></div>';
-        document.getElementById('countdown').innerHTML += '<div class="countdownbox col-xs-2"><span class="countdowninner">'+hours+'<br>hrs</span></div>';
-        document.getElementById('countdown').innerHTML += '<div class="countdownbox col-xs-2"><span class="countdowninner">'+minutes+'<br>mins</span></div>';
-        document.getElementById('countdown').innerHTML += '<div class="countdownbox col-xs-2"><span class="countdowninner">'+seconds+'<br>secs</span></div>';
+        document.getElementById('countdown').innerHTML = '<div class="countdownbox col-xs-2"><span class="countdowninner"><font size="8" color="#47035e">'+days+'</font><font size="2" weight="100">Days</font></span></div>';
+        document.getElementById('countdown').innerHTML += '<div class="countdownbox col-xs-2"><span class="countdowninner"><font size="8" color="#47035e">'+hours+'</font><font size="2">Hrs</font></span></div>';
+        document.getElementById('countdown').innerHTML += '<div class="countdownbox col-xs-2"><span class="countdowninner"><font size="8" color="#47035e">'+minutes+'</font><font size="2">Mins</font></span></div>';
+        document.getElementById('countdown').innerHTML += '<div class="countdownbox col-xs-2"><span class="countdowninner"><font size="8" color="#47035e">'+seconds+'</font><font size="2">Secs</font></span></div>';
     }
 
     timer = setInterval(showRemaining, 1000);
+
+
+    onload = function() {
+          if ('speechSynthesis' in window) {
+              var synth = speechSynthesis;
+    var flag = false;
+
+    /* references to the buttons */
+    var playEle = document.querySelector('#play');
+    var pauseEle = document.querySelector('#pause');
+    var stopEle = document.querySelector('#stop');
+
+    /* click event handlers for the buttons */
+    playEle.addEventListener('click', onClickPlay);
+    pauseEle.addEventListener('click', onClickPause);
+    stopEle.addEventListener('click', onClickStop);
+
+    function onClickPlay() {
+    if(!flag){
+        flag = true;
+        utterance = new SpeechSynthesisUtterance(
+              document.querySelector('article').textContent);
+        utterance.voice = synth.getVoices()[0];
+        utterance.onend = function(){
+            flag = false;
+        };
+
+        synth.speak(utterance);
+    }
+    if(synth.paused) { /* unpause/resume narration */
+        synth.resume();
+    }
+    }
+    function onClickPause() {
+    if(synth.speaking && !synth.paused){ /* pause narration */
+        synth.pause();
+    }
+    }
+    function onClickStop() {
+    if(synth.speaking){ /* stop narration */
+        /* for safari */
+        flag = false;
+        synth.cancel();
+    }
+    }
+          }
+          else {
+              /* speech synthesis not supported */
+          }
+        }

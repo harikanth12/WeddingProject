@@ -20,7 +20,9 @@
 }
 .bannerimg img{
     height: 500px;
-    width: 1146px;
+    width: 100%;
+  max-width: 1146px;
+    /*width: 1146px;*/
 }
 .countdownbox {
     border-radius: 25px;

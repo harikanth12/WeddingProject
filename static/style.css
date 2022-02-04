@@ -64,9 +64,9 @@ float: none;
     width:200px;
 
 }
-.bottom-txt {
+.bottom-txt article{
     text-align: center;
-    margin: 1% au;
+    margin: 1% auto;
     margin-top: 2%;
     font-family: 'Yellowtail', cursive;
     font-weight: 400;
@@ -84,4 +84,41 @@ text-align: center;
     }
 #play {
     margin-top:30px;
+}
+.col-xs-2-4 {
+    width:20,37%
+}
+
+@media (max-width: 600px) {
+.bottom-txt article{
+    font-size:10px;
+}
+.bottom-txt {
+text-align: center;
+}
+.btnsize {
+    font-size:10px;
+}
+.god_images img {
+   width: auto;
+}
+.bannerimg img {
+height:auto;
+}
+#nav-big-text {
+    font-size: 26px;
+}
+.countdownsize {
+    width:23%
+}
+.countdownbox {
+margin:1%;
+padding:1%;
+}
+.bottom-repsonive {
+margin-top:10px;
+}
+html,body{
+    overflow-x: hidden;
+}
 }

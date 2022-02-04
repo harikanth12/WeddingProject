@@ -21,10 +21,10 @@
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
 
-        document.getElementById('countdown').innerHTML = '<div class="countdownbox col-xs-2"><span class="countdowninner"><font size="8" color="white">'+days+'</font><font size="2" color="white">Days</font></span></div>';
-        document.getElementById('countdown').innerHTML += '<div class="countdownbox col-xs-2"><span class="countdowninner"><font size="8" color="white">'+hours+'</font><font size="2" color="white">Hrs</font></span></div>';
-        document.getElementById('countdown').innerHTML += '<div class="countdownbox col-xs-2"><span class="countdowninner"><font size="8" color="white">'+minutes+'</font><font size="2" color="white">Mins</font></span></div>';
-        document.getElementById('countdown').innerHTML += '<div class="countdownbox col-xs-2"><span class="countdowninner"><font size="8" color="white">'+seconds+'</font><font size="2" color="white">Secs</font></span></div>';
+        document.getElementById('countdown').innerHTML = '<div class="countdownbox col-sm-2 col-xs-3 countdownsize"><span class="countdowninner"><font size="8" color="white">'+days+'</font><font size="2" color="white">Days</font></span></div>';
+        document.getElementById('countdown').innerHTML += '<div class="countdownbox col-sm-2 col-xs-3 countdownsize"><span class="countdowninner"><font size="8" color="white">'+hours+'</font><font size="2" color="white">Hrs</font></span></div>';
+        document.getElementById('countdown').innerHTML += '<div class="countdownbox col-sm-2 col-xs-3 countdownsize"><span class="countdowninner"><font size="8" color="white">'+minutes+'</font><font size="2" color="white">Mins</font></span></div>';
+        document.getElementById('countdown').innerHTML += '<div class="countdownbox col-sm-2 col-xs-3 countdownsize"><span class="countdowninner"><font size="8" color="white">'+seconds+'</font><font size="2" color="white">Secs</font></span></div>';
     }
 
     timer = setInterval(showRemaining, 1000);

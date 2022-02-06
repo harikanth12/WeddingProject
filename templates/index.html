@@ -1,16 +1,16 @@
-<!--font-family: 'Pacifico', cursive;-->
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Wedding</title>
+    <title>Wedding Invitation</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0; user-scalable=0;' name='viewport' ">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link  rel="stylesheet" href ="/static/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Comforter&family=Dancing+Script:wght@400;500;700&family=Open+Sans:ital,wght@0,500;1,800&family=Pacifico&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link  rel="stylesheet" href ="/static/style.css">
         <script src="/static/myscript.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Comforter&family=Dancing+Script:wght@400;500;700&family=Open+Sans:ital,wght@0,500;1,800&family=Pacifico&family=Sedgwick+Ave&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -40,21 +40,14 @@
         <div class="row">
             <div class="col-xs-12 bannerimg">
                 <img src="{{ scroll_image}}" alt="bannerimg" class="responsive">
+                <a href="https://www.youtube.com/watch?v=I8c0-NEBqL0" class="fa fa-youtube-play button-img"></a>
             </div>
         </div>
     </div> <!-- bannerimg-->
 
+    <div class="clearfix"></div>
+
     <div class ="container">
-<!--        <div class="row">-->
-<!--            <div class="col-xs-6 col-centered">-->
-<!--                <span>We Are Getting Married!</span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-xs-6 col-date">-->
-<!--                <span>16th Feb 2022</span>-->
-<!--            </div>-->
-<!--        </div>-->
         <div class="row">
             <div class="col-sm-10 col-sm-offset-2 col-xs-12">
                 <div id="countdown"></div>
@@ -69,18 +62,15 @@
             </div>
             <div class="col-sm-2 col-xs-4 bottom-txt">
                 <article> We warmly invite you and your family to join us as we start a new journey of life together. Your presence will be a blessing to us.</article>
-                <button type="button" class="btn btn-primary btn-md active btnsize" id="play">Audio Invetation</button>
-<!--                <button style="font-size:24px" id="play"><i class="fa fa-play-circle-o"></i>Audio Invetation</button>-->
+                <audio id="player" src="{{ audio_link }}"></audio>
+                <div style="margin-top:10px;">
+                    <button onclick="document.getElementById('player').play()" class="btn btn-primary btn-md active btnsize">Audio Invitation</button>
+                </div>
             </div>
             <div class="col-sm-3 col-xs-4 bottom_right_img">
                 <img src="{{ bottom_right_img }}" alt="Hari">
             </div>
         </div>
     </div>
-<!--    <article id="hidden">-->
-<!--    <h1>With our sincere invitation, we (hari)and sruthi cordially invite you to come to our wedding ceremony on 16th-February-2022 at silka grand near srikanya thearte viskhapatanam by 8:45pm </h1>-->
-<!--    </article>-->
-
-
 </body>
 </html>

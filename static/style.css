@@ -19,14 +19,21 @@
     text-align: right;
 }
 .bannerimg img{
-    height: 500px;
     width: 100%;
   max-width: 1146px;
+  position: relative;
     /*width: 1146px;*/
+}
+.button-img {
+    position: absolute;
+    top: 67%;
+    right: 255px;
+    font-size:75px !important;
+    color:red;
 }
 .countdownbox {
     border-radius: 25px;
-    border: 2px solid #73AD21;
+    border: 2px solid #ffffff;
     margin:2%;
     padding:4%;
     background-color:#241ac2a6;
@@ -34,9 +41,7 @@
 #countdown span {
 font-size:14px;
 }
-.countdowninner {
-    font-family: 'Open Sans', sans-serif;
-}
+
 .col-centered {
     float: none;
     margin: 2px auto;
@@ -62,7 +67,11 @@ float: none;
     max-width:100%;
     height:200px;
     width:200px;
+}
 
+.bottom-txt {
+    text-align: center;
+    margin-top: 10px;
 }
 .bottom-txt article{
     text-align: center;
@@ -70,7 +79,7 @@ float: none;
     margin-top: 2%;
     font-family: 'Yellowtail', cursive;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 15px;
 }
 .bottom_right_img {
 text-align: right;
@@ -88,37 +97,233 @@ text-align: center;
 .col-xs-2-4 {
     width:20,37%
 }
+.bottom-repsonive {
+margin-bottom: 10px;
+}
 
-@media (max-width: 600px) {
-.bottom-txt article{
-    font-size:10px;
+.clearfix {
+  overflow: auto;
 }
-.bottom-txt {
-text-align: center;
+.text-days {
+    font-size: 38px !important;
 }
-.btnsize {
-    font-size:10px;
+.day-sub {
+    font-size: 13px !important;
 }
+
+
+/* resposnive starts here */
+@media only screen and (max-width: 360px) {
 .god_images img {
-   width: auto;
+    width: auto;
 }
-.bannerimg img {
-height:auto;
+#nav-big-text {
+    font-size: 21px;
+}
+.button-img {
+    position: absolute;
+    top: 66%;
+    right: 77px;
+    font-size: 48px !important;
+}
+
+.countdownbox {
+    border: 2px solid #ffffff !important;
+    margin:0 !important;
+    margin-top:3px !important;
+    padding:1% !important;
+    text-align:center;
+}
+.text-days {
+    font-size: 24px !important;
+}
+.day-sub {
+    font-size: 8px !important;
+}
+.bottom-txt article {
+    font-size: 11px;
+}
+.bannerimg img{
+    width: 100%;
+    position:relative;
+    /*width: 1146px;*/
+}
+.clearfix {
+  overflow: auto;
+}
+
+} /*360 width and height 740 */
+
+@media only screen (min-width:361px) and (max-width: 400px) {
+.god_images img {
+    width: auto;
+}
+#nav-big-text {
+    font-size: 16px;
+}
+.button-img {
+    position: absolute;
+    top: 66%;
+    right: 86px;
+    font-size: 48px !important;
+}
+
+.countdownbox {
+    border: 2px solid #ffffff !important;
+    margin:0 !important;
+    margin-top:3px !important;
+    padding:1% !important;
+    text-align:center;
+}
+.text-days {
+    font-size: 24px !important;
+}
+.day-sub {
+    font-size: 8px !important;
+}
+.bottom-txt article {
+    font-size: 12px;
+}
+.bannerimg img{
+    width: 100%;
+    position:relative;
+    /*width: 1146px;*/
+}
+.clearfix {
+  overflow: auto;
+}
+
+} /*400 width and height 740 */
+
+@media only screen and (min-width: 421px) and (max-width: 600px){
+.god_images img {
+    width: auto;
+}
+#nav-big-text {
+    font-size: 32px;
+}
+#nav-small-text {
+    font-size: 15px;
+}
+.button-img {
+    position: absolute;
+    top: 67%;
+    right: 130px;
+    font-size: 48px !important;
+}
+
+.countdownbox {
+    border: 2px solid #ffffff !important;
+    margin:0 !important;
+    margin-top:3px !important;
+    padding:1% !important;
+    text-align:center;
+}
+.text-days {
+    font-size: 24px !important;
+}
+.day-sub {
+    font-size: 8px !important;
+}
+.bottom-txt article {
+    font-size: 14px;
+}
+.bannerimg img{
+    width: 100%;
+    position:relative;
+    /*width: 1146px;*/
+}
+.clearfix {
+  overflow: auto;
+}
+
+} /*400 to 600px width and height 740 */
+
+@media only screen and (min-width: 401px) and (max-width: 420px){
+.god_images img {
+    width: auto;
 }
 #nav-big-text {
     font-size: 26px;
 }
-.countdownsize {
-    width:23%
+#nav-small-text {
+    font-size: 15px;
 }
+.button-img {
+    position: absolute;
+    top: 67%;
+    right: 90px;
+    font-size: 48px !important;
+}
+
 .countdownbox {
-margin:1%;
-padding:1%;
+    border: 2px solid #ffffff !important;
+    margin:0 !important;
+    margin-top:3px !important;
+    padding:1% !important;
+    text-align:center;
 }
-.bottom-repsonive {
-margin-top:10px;
+.text-days {
+    font-size: 24px !important;
 }
-html,body{
-    overflow-x: hidden;
+.day-sub {
+    font-size: 8px !important;
 }
+.bottom-txt article {
+    font-size: 13px;
 }
+.bannerimg img{
+    width: 100%;
+    position:relative;
+    /*width: 1146px;*/
+}
+.clearfix {
+  overflow: auto;
+}
+
+} /*400 to 600px width and height 740 */
+
+@media only screen and (min-width: 601px) and (max-width: 912px){
+.god_images img {
+    width: auto;
+}
+#nav-big-text {
+    font-size: 50px;
+}
+#nav-small-text {
+    font-size: 20px;
+}
+.button-img {
+    position: absolute;
+    top: 67%;
+    right: 168px;
+    font-size: 48px !important;
+}
+
+.countdownbox {
+    border: 2px solid #ffffff !important;
+    margin:0 !important;
+    margin-top:3px !important;
+    padding:1% !important;
+    text-align:center;
+}
+.text-days {
+    font-size: 24px !important;
+}
+.day-sub {
+    font-size: 8px !important;
+}
+.bottom-txt article {
+    font-size: 11px;
+}
+.bannerimg img{
+    width: 100%;
+    position:relative;
+    /*width: 1146px;*/
+}
+.clearfix {
+  overflow: auto;
+}
+
+} /*400 to 600px width and height 740 */
+

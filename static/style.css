@@ -120,9 +120,8 @@ margin-bottom: 10px;
   z-index: 100;
   width: 100vw;
   height: 100vh;
-
-  background-color: rgba(192, 192, 192, 0.5);
-  background-image: url('../static/images/w.gif');
+  background-color: #162580;
+  background-image: url('../static/images/bike.gif');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -130,7 +129,7 @@ margin-bottom: 10px;
 
 
 /* resposnive starts here */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
 .god_images img {
     width: auto;
 }
@@ -168,49 +167,8 @@ margin-bottom: 10px;
 .clearfix {
   overflow: auto;
 }
-
-} /*360 width and height 740 */
-
-@media only screen (min-width:361px) and (max-width: 400px) {
-.god_images img {
-    width: auto;
+ /*360 width and height 740 */
 }
-#nav-big-text {
-    font-size: 16px;
-}
-.button-img {
-    position: absolute;
-    top: 66%;
-    right: 86px;
-    font-size: 48px !important;
-}
-
-.countdownbox {
-    border: 2px solid #ffffff !important;
-    margin:0 !important;
-    margin-top:3px !important;
-    padding:1% !important;
-    text-align:center;
-}
-.text-days {
-    font-size: 24px !important;
-}
-.day-sub {
-    font-size: 8px !important;
-}
-.bottom-txt article {
-    font-size: 12px;
-}
-.bannerimg img{
-    width: 100%;
-    position:relative;
-    /*width: 1146px;*/
-}
-.clearfix {
-  overflow: auto;
-}
-
-} /*400 width and height 740 */
 
 @media only screen and (min-width: 421px) and (max-width: 600px){
 .god_images img {

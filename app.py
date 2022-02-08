@@ -6,6 +6,7 @@ PEOPLE_FOLDER = os.path.join('static', 'images')
 myapp.config['UPLOAD_FOLDER'] = PEOPLE_FOLDER
 audio_folder = os.path.join('static','audio')
 myapp.config['audio_folder'] = audio_folder
+# <iframe src="https://giphy.com/embed/1l3ZRGuaseWKxLH1ve" width="480" height="473" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/FanshaweCollege-fanshawe-college-1l3ZRGuaseWKxLH1ve">via GIPHY</a></p>
 
 @myapp.route("/")
 def home():
@@ -13,7 +14,7 @@ def home():
     scroll_image = os.path.join(myapp.config['UPLOAD_FOLDER'], 'Banner.jpeg')
     bottom_left_img = os.path.join(myapp.config['UPLOAD_FOLDER'], 'Sruthi.png')
     bottom_right_img = os.path.join(myapp.config['UPLOAD_FOLDER'], 'Hari.png')
-    audio_link = os.path.join(myapp.config['audio_folder'], 'invitation_audio.mp3')
+    audio_link = os.path.join(myapp.config['audio_folder'], 'audio.mp3')
     return render_template('index.html',user_image = full_filename,scroll_image=scroll_image,bottom_left_img=bottom_left_img,
                            bottom_right_img=bottom_right_img,audio_link=audio_link)
 
